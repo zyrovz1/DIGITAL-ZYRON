@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#090A0D">
+<title>Digital Zyron | Agência Digital</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">DIGITAL <span>ZYRON</span></div>
+  <nav>
+    <a href="#inicio">Início</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#contato">Contato</a>
+  </nav>
+  <button class="cart-button" id="openCart">
+    Carrinho <span id="cartCount">0</span>
+  </button>
+</header>
+
+<section class="hero" id="inicio">
+  <div class="hero-content">
+    <span class="tag">DIGITAL ZYRON · SOLUÇÕES DIGITAIS</span>
+    <h1>Transformamos ideias em <span>experiências digitais.</span></h1>
+    <p>Desenvolvemos sites, cardápios digitais e soluções tecnológicas para empresas que desejam crescer na internet.</p>
+    <a href="#servicos" class="button">Explorar serviços</a>
+  </div>
+</section>
+
+<section id="servicos">
+  <div class="section-title">
+    <span>NOSSO CATÁLOGO</span>
+    <h2>Escolha seu próximo projeto.</h2>
+    <p>Conheça nossas soluções digitais e adicione ao seu carrinho.</p>
+  </div>
+  <div class="services" id="serviceList"></div>
+</section>
+
+<section id="sobre">
+  <div class="section-title">
+    <span>NOSSA IDENTIDADE</span>
+    <h2>Digital Zyron</h2>
+    <p>Tecnologia, criatividade e desenvolvimento digital para transformar negócios.</p>
+  </div>
+</section>
+
+<section id="contato">
+  <div class="section-title">
+    <span>ATENDIMENTO</span>
+    <h2>Tem um projeto em mente?</h2>
+    <p>Entre em contato e conte sua ideia.</p>
+  </div>
+  <form id="contactForm">
+    <input id="name" placeholder="Seu nome" required>
+    <input id="business" placeholder="Nome da empresa">
+    <textarea id="details" placeholder="Conte sobre seu projeto..." required></textarea>
+    <button class="button" type="submit">Conversar pelo WhatsApp</button>
+  </form>
+</section>
+
+<div class="cart-overlay" id="cartOverlay">
+  <aside class="cart-panel">
+    <div class="cart-header">
+      <h2>Meu carrinho</h2>
+      <button id="closeCart" class="close-cart">×</button>
+    </div>
+
+    <div id="cartItems" class="cart-items"></div>
+
+    <div class="cart-footer">
+      <div class="total-line">
+        <span>Total estimado</span>
+        <strong id="cartTotal">R$ 0,00</strong>
+      </div>
+      <p id="quoteNote">Valores sujeitos à confirmação do orçamento.</p>
+      <button id="checkout" class="button checkout-button">
+        Finalizar pedido
+      </button>
+      <button id="clearCart" class="clear-button">Limpar carrinho</button>
+    </div>
+  </aside>
+</div>
+
+<footer>
+  <strong>DIGITAL ZYRON</strong>
+  <p>© 2026 Digital Zyron. Todos os direitos reservados.</p>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>

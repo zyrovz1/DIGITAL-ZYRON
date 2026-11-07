@@ -1,0 +1,9 @@
+{
+  "name": "digital-zyron",
+  "version": "1.0.0",
+  "description": "Loja virtual de serviços digitais",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  }
+}
